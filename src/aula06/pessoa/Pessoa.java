@@ -1,4 +1,4 @@
-package aula06;
+package aula06.pessoa;
 
 public class Pessoa {
 	

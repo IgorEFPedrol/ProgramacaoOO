@@ -1,6 +1,6 @@
-package aula06;
+package aula06.granja;
 
-public class galinhaTeste {
+public class GalinhaTeste {
 
 	public static void main(String[] args) {
 		
