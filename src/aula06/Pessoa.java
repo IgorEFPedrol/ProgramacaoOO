@@ -3,11 +3,18 @@ package aula06;
 public class Pessoa {
 	
 	String nome;
-	final int cpf = 11111111;
+	private final int cpf = 11111111;
 	int telefone;
 	String dataNasc;
-	String estado;
+	String estadoCivil;
 	
+	public void andar() {
+		System.out.println(nome + " está andando...");
+	}
+
+	public int getCpf() {
+		return cpf;
+	}
 	
 	
 	
