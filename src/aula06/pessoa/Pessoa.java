@@ -3,17 +3,28 @@ package aula06.pessoa;
 public class Pessoa {
 	
 	String nome;
-	private final int cpf = 11111111;
+	int cpf;
 	int telefone;
 	String dataNasc;
 	String estadoCivil;
 	
-	public void andar() {
-		System.out.println(nome + " está andando...");
+	public Pessoa(String nome, int cpf, int telefone, String dataNasc, String estadoCivil) {
+		super();
+		this.nome = nome;
+		this.cpf = cpf;
+		this.telefone = telefone;
+		this.dataNasc = dataNasc;
+		this.estadoCivil = estadoCivil;
+	}
+	
+	@Override
+	public String toString() {
+		return "Pessoa [nome=" + nome + ", cpf=" + cpf + ", telefone=" + telefone + ", dataNasc=" + dataNasc
+				+ ", estadoCivil=" + estadoCivil + "]";
 	}
 
-	public int getCpf() {
-		return cpf;
+	public void andar() {
+		System.out.println(nome + " está andando...");
 	}
 	
 	

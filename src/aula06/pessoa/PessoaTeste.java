@@ -4,25 +4,15 @@ public class PessoaTeste {
 
 	public static void main(String[] args) {
 		
-		Pessoa pessoa1 = new Pessoa();
-		Pessoa pessoa2 = new Pessoa();
-		Pessoa pessoa3 = new Pessoa();
+		Pessoa pessoa1 = new Pessoa("Igor", 14235859, 99999999, "26/05", "solteiro");
+		Pessoa pessoa2 = new Pessoa("Pedro", 9347892, 99888888,"14/01", "solteiro");
+		Pessoa pessoa3 = new Pessoa("João", 638572, 99777777,"30/11", "casado");
 		
-		pessoa1.nome = "Igor";
-		pessoa1.telefone = 99999999;
-		pessoa1.dataNasc = "26/05";
-		pessoa1.estadoCivil = "solteiro";
+		pessoa1.andar();
 		
-		pessoa2.nome = "Pedro";
-		pessoa2.telefone = 99888888;
-		pessoa2.dataNasc = "14/01";
-		pessoa2.estadoCivil = "solteiro";
-		
-		pessoa3.nome = "joão";
-		pessoa3.telefone = 99777777;
-		pessoa3.dataNasc = "30/11";
-		pessoa3.estadoCivil = "casado";
-
+		System.out.println(pessoa1);
+		System.out.println(pessoa2);
+		System.out.println(pessoa3);
 	}
 
 }
